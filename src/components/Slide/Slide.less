@@ -1,0 +1,43 @@
+.slide{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  .slick-dots{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 8px;
+    li{
+      margin: 0px 4px;
+    }
+    .slick-active{
+      button{
+        &::before{
+          display: none;
+        }
+        &::after{
+          content: '';
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          background-color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+    button{
+      &::before{
+       display: none;
+      }
+      &::after{
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+}

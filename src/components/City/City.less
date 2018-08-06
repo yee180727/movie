@@ -1,0 +1,127 @@
+.city{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: #eee;;
+  &__title{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #e2d2d2;
+  }
+  &__title--close{
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    font-weight: 400;
+  }
+  &__content{
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    top: 44px;
+    bottom: 0px;
+    background-color: #f5f5f5;
+    width: 100%;
+    .city__block{
+      padding: 10px 10px;
+      border-top: 1px solid #ddd;
+      &--label{
+        font-weight: bold;
+        text-align: left; 
+        font-size: 12px;
+        height: 28px;
+        line-height: 28px;
+        color: #9f9fa0;
+        margin-bottom: 14px;
+      }
+      &--wrap{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        span{
+          font-size: 12px;
+          width: 116px;
+          height: 32px;
+          line-height: 32px;
+          background-color: #fff;
+          border: 1px solid #ddd;
+          color: #999;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+      }
+    }
+    .city__list{
+      text-align: left;
+      &--label,
+      &--wrap{
+        color: #333;
+        font-size: 12px;
+      }
+      &--label{
+        height: 28px;
+        line-height: 28px;
+        padding: 0 20px;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+      }
+      &--wrap{
+        margin: 0;
+        padding: 0 15px;
+        background-color: #fff;
+      }
+      ul{
+        padding: 0px;
+        li{
+          padding: 0px 20px;
+          list-style: none;
+          height: 48px;
+          line-height: 48px;
+          &:nth-child(n + 2) {
+            border-top: 1px solid #ddd;
+          }
+        }
+      }
+    }
+  }
+  &__index{
+    position: fixed;
+    padding: 0 6px;
+    top: 80px;
+    right: 0px;
+    width: 40px;
+    list-style: none;
+    ul{
+      padding: 0px;
+      li{
+        list-style: none;
+        a{
+          font-size: 12px;
+          text-decoration: none;
+          color: #5fb5f9;
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+  &::after{
+    content: "";
+    display: inline-block;
+    clear: both;
+  }
+}
