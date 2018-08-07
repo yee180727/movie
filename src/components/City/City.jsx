@@ -29,9 +29,9 @@ class City extends Component {
         </div>
         <div className="city__content">
           <div className="city__block">
-            <div className="city__block--label" id="定位" onClick = {() => selectCity('杭州')}>定位城市</div>
+            <div className="city__block--label" id="定位">定位城市</div>
             <div className="city__block--wrap">
-              <span>杭州</span>
+              <span onClick = {() => selectCity(`杭州`)}>杭州</span>
             </div>
           </div>
           <div className="city__block">
