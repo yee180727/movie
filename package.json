@@ -23,5 +23,6 @@
     "react-router-dom": "^4.3.1",
     "react-slick": "^0.23.1",
     "slick-carousel": "^1.8.1"
-  }
+  },
+  "homepage": "https://yee180727.github.io/my-app"
 }
